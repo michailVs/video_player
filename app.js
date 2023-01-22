@@ -19,9 +19,11 @@ function play() {
     if (count === 0) {
         video.play()
         count = 1
+        document.querySelector('.btn-play').innerHTML = `Pause`
     } else {
         video.pause()
         count = 0
+        document.querySelector('.btn-play').innerHTML = `Play`
     }
 }
 function next() {
